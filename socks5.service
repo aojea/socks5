@@ -1,0 +1,13 @@
+[Unit]
+Description=socks5: Go SOCKS5 Server
+Documentation=https://github.com/aojea/socks5
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/socks5
+Restart=always
+StartLimitInterval=0
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
